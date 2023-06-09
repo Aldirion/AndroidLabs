@@ -3,9 +3,16 @@
     <string name="menu_title">Выберите лабораторную работу</string>
     <string name="title_l1">Лабораторная работа №1 В0</string>
     <string name="title_l2">Лабораторная работа №2 В0</string>
+    <string name="title_l3">Лабораторная работа №3 В0</string>
+    <string name="title_l4">Лабораторная работа №4 В0</string>
+    <string name="title_l5">Лабораторная работа №5 В0</string>
+    <string name="title_l6">Лабораторная работа №6 В0</string>
+    <string name="title_l7">Лабораторная работа №7 В0</string>
+    <string name="title_l8">Лабораторная работа №8 В0</string>
     <string name="SolveBtText">Проверить!</string>
     <string name="DataInputHint">Введите исходные данные через пробел</string>
     <string name="ReturnButtonText">Вернуться в меню</string>
     <string name="L1Task">Посчитать среднее арифметическое и среднее геометрическое трех чисел</string>
     <string name="L2Task">Вычислить:</string>
+    <string name="L3Task">Сложение строк:</string>
 </resources>
