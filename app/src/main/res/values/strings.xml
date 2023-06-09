@@ -1,4 +1,9 @@
 <resources>
     <string name="app_name">Labs</string>
     <string name="menu_title">Выберите лабораторную работу</string>
+    <string name="title_l1">Лабораторная работа №1 В0</string>
+    <string name="SolveBtText">Проверить!</string>
+    <string name="DataInputHint">Введите исходные данные через пробел</string>
+    <string name="ReturnButtonText">Вернуться в меню</string>
+    <string name="L1Task">Посчитать среднее арифметическое и среднее геометрическое трех чисел</string>
 </resources>

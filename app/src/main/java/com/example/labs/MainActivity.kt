@@ -1,5 +1,6 @@
 package com.example.labs
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
@@ -14,8 +15,15 @@ class MainActivity : AppCompatActivity() {
         setContentView(bdCl.root)
         //bdCl.menuTitle.text = "Hello, Android!" - проверка работоспособности Binding Class
     }
+
+    override fun onResume() {
+        super.onResume()
+        Log.i("MyLog", "Запущено MainActivity")
+    }
     fun onClickL1 (view : View) {
         Log.i("MyLog", "Button 1 pressed")
+        val intent = Intent(this, Lab1::class.java)
+        startActivity(intent)
     }
 
     fun onClickL2(view: View) {
