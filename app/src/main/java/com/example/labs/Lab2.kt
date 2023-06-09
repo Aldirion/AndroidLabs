@@ -19,8 +19,9 @@ class Lab2 : AppCompatActivity() {
     }
 
     fun OnClickReturnToMenu(view: View) {
-        val intent = Intent(this, MainActivity::class.java)
-        startActivity(intent)
+        //val intent = Intent(this, MainActivity::class.java)
+        //startActivity(intent)
+        finish()
     }
     fun OnClickSolveL2(view: View) {
         var x = 0.0

@@ -3,11 +3,16 @@ package com.example.labs
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.provider.ContactsContract
 import android.util.Log
 import android.view.View
+import androidx.compose.runtime.Composable
+import androidx.navigation.compose.rememberNavController
 import com.example.labs.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
+
+
     lateinit var bdCl : ActivityMainBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -38,6 +43,8 @@ class MainActivity : AppCompatActivity() {
     }
     fun onClickL4(view: View) {
         Log.i("MyLog", "Button 4 pressed")
+        val intent = Intent (this, Lab4::class.java)
+        startActivity(intent)
     }
     fun onClickL5(view: View) {
         Log.i("MyLog", "Button 5 pressed")
@@ -52,3 +59,5 @@ class MainActivity : AppCompatActivity() {
         Log.i("MyLog", "Button 8 pressed")
     }
 }
+
+

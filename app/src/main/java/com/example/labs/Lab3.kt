@@ -26,8 +26,9 @@ class Lab3 : AppCompatActivity() {
             bdCl.textView3.text = "Ошибка. Проверьте правильность введенных данных"
     }
     fun OnClickReturnToMenu(view: View) {
-        var intent = Intent(this, MainActivity::class.java)
-        startActivity(intent)
+        //var intent = Intent(this, MainActivity::class.java)
+        //startActivity(intent)
+        finish()
     }
 
 }

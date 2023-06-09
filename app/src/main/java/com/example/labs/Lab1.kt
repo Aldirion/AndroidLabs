@@ -24,8 +24,9 @@ class Lab1 : AppCompatActivity() {
     }
 
     fun OnClickReturnToMenu(view: View) {
-        val intent = Intent(this,MainActivity::class.java) //объявление активити для перехода
-        startActivity(intent) //запуск активити
+        //val intent = Intent(this,MainActivity::class.java) //объявление активити для перехода
+        //startActivity(intent) //запуск активити
+        finish()
     }
     fun OnClickSolveL1(view: View) {
         val input = bdCl.dataInput.editableText.toString()
