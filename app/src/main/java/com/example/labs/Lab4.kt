@@ -113,7 +113,9 @@ private fun ListItem(num: Int, isAnswered: Boolean) {
                             contentDescription = "Ложь"
                         )
                     },
-                    text = { Text("Ложь") }
+                    text = { Text("Ложь") },
+                    shape = RoundedCornerShape(5.dp),
+                    backgroundColor = Color.Red
                 )
                 ExtendedFloatingActionButton(
                     modifier = Modifier
@@ -134,7 +136,9 @@ private fun ListItem(num: Int, isAnswered: Boolean) {
                             contentDescription = "Правда"
                         )
                     },
-                    text = { Text("Правда") }
+                    text = { Text("Правда") },
+                    shape = RoundedCornerShape(5.dp),
+                    backgroundColor = Color.Green
                 )
             }
         }
@@ -155,7 +159,9 @@ private fun ListItem(num: Int, isAnswered: Boolean) {
                                 contentDescription = "Вперед"
                             )
                         },
-                        text = { Text("Вперед") }
+                        text = { Text("Вперед") },
+                        shape = RoundedCornerShape(5.dp),
+                        backgroundColor = Color.Gray
                     )
                 }
             }
