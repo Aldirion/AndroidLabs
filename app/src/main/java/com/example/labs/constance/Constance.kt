@@ -27,4 +27,19 @@ object Constance {
         6 to "https://cdn.nwmgroups.hu/s/img/i/1803/20180318legolcsobb-varosok-eiu2.jpg",
         7 to "https://sportishka.com/uploads/posts/2022-03/1648094096_42-sportishka-com-p-elbrus-i-kavkazskii-khrebet-turizm-krasivo-45.jpg",
         8 to "http://zapovedsever.ru/images/x/2yx-full.jpg")
+    val PHOTO_SIZE_MAP : Map <Int, String> = mapOf(
+        1 to "9x12",
+        2 to "10x15",
+        3 to "18x24"
+    )
+    val PHOTO_COST_MAP : Map <Int, Double> = mapOf (
+        1 to 100.0,
+        2 to 150.0,
+        3 to 300.0
+    )
+    val PHOTO_SIZE_COST_MAP: Map <String, Double> = mapOf(
+        "9x12" to 100.0,
+        "10x15" to 150.0,
+        "18x24" to 300.0
+    )
 }

@@ -48,6 +48,8 @@ class MainActivity : AppCompatActivity() {
     }
     fun onClickL5(view: View) {
         Log.i("MyLog", "Button 5 pressed")
+        val intent = Intent (this, Lab5::class.java)
+        startActivity(intent)
     }
     fun onClickL6(view: View) {
         Log.i("MyLog", "Button 6 pressed")
