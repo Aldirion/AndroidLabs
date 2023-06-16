@@ -20,8 +20,9 @@ import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.core.text.isDigitsOnly
+//import androidx.lifecycle.ViewModel
 import com.example.labs.constance.Constance
-import androidx.lifecycle.viewmodel.compose.viewModel
+//import androidx.lifecycle.viewmodel.compose.viewModel
 
 
 class Lab5 : ComponentActivity() {
@@ -33,9 +34,7 @@ class Lab5 : ComponentActivity() {
         }
     }
 
-//data class PrintCalc(
-//
-//)
+
 
 @Composable
 fun calcView() {
@@ -49,7 +48,7 @@ fun calcView() {
                 .fillMaxSize()
                 .fillMaxWidth()
         ) {
-            """Выбор параметров снимка"""
+            //"""Выбор параметров снимка"""
             Row(
                 modifier = Modifier
                     .fillMaxWidth()
@@ -118,7 +117,7 @@ fun calcView() {
                     }
                 }
             }
-            """Строка ввода количества снимков"""
+           // """Строка ввода количества снимков"""
             Row(
                 modifier = Modifier
                     .fillMaxWidth()
@@ -172,7 +171,7 @@ fun calcView() {
                     shape = RoundedCornerShape(5.dp)
                 )
             }
-            """Финальная стоимость"""
+           // """Финальная стоимость"""
             Row(
                 modifier = Modifier
                     .fillMaxWidth(),
@@ -192,7 +191,7 @@ fun calcView() {
                     )
                 }
             }
-            """Кнопка оплаты"""
+           // """Кнопка оплаты"""
             Row(
                 modifier = Modifier
                     .fillMaxWidth()
