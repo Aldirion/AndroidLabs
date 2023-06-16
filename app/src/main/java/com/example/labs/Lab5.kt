@@ -14,6 +14,7 @@ import androidx.compose.material.*
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.*
 import androidx.compose.runtime.*
+import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.text.input.KeyboardType
@@ -38,10 +39,10 @@ class Lab5 : ComponentActivity() {
 
 @Composable
 fun calcView() {
-    val (selectedOption, onOptionSelected) = remember { mutableStateOf(Constance.PHOTO_SIZE_MAP[1]) }
-    var quantity by remember { mutableStateOf("") }
-    var selCost by remember { mutableStateOf(0.0) }
-    var setSize by remember { mutableStateOf(1) }
+    val (selectedOption, onOptionSelected) = rememberSaveable { mutableStateOf(Constance.PHOTO_SIZE_MAP[1]) }
+    var quantity by rememberSaveable { mutableStateOf("") }
+    var selCost by rememberSaveable { mutableStateOf(0.0) }
+    var setSize by rememberSaveable { mutableStateOf(1) }
     MaterialTheme {
         Column(
             modifier = Modifier

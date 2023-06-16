@@ -19,6 +19,7 @@ import androidx.compose.material.icons.filled.Close
 import androidx.compose.material.icons.filled.Done
 import androidx.compose.material.icons.filled.Favorite
 import androidx.compose.runtime.*
+import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
@@ -39,7 +40,8 @@ class Lab4 : ComponentActivity() {
         super.onCreate(savedInstanceState)
         var startnum = 1
         setContent {
-                ListItem(startnum, false)
+            MaterialTheme(){ListItem(startnum, false)}
+
            // ListItem(2)
         }
     }
@@ -51,15 +53,15 @@ class Lab4 : ComponentActivity() {
 //@Preview (showBackground = true)
 @Composable
 private fun ListItem(num: Int, isAnswered: Boolean) {
-    val (value, setValue) = remember {
+    val (value, setValue) = rememberSaveable {
         mutableStateOf(num)
     }
-    var counter = remember {
+    var counter = rememberSaveable {
         mutableStateOf(0)
     }
     //Log.i("MyLog", "Counter" + counter.toString())
     var answer : Boolean = true
-    var isVisible by remember {
+    var isVisible by rememberSaveable {
         mutableStateOf( true  )
     }
     Column() {
